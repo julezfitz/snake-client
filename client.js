@@ -7,6 +7,10 @@ const connect = function(message) {
   });
   conn.setEncoding('utf8');
 
+  conn.on('connect', () => {
+    conn.write('Name: Jul');
+  });
+
   conn.on('data', (data) => {
     console.log('Message from game: ', data);
   });
