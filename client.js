@@ -29,6 +29,6 @@ const connect = function (message) {
   return conn;
 };
 
-module.exports = {{
+module.exports = {
   connect
 };
