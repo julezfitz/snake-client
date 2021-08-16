@@ -1,29 +1,24 @@
+const { MOVE_UP_KEY, MOVE_LEFT_KEY, MOVE_DOWN_KEY, MOVE_RIGHT_KEY, MESSAGES } = require('./constants');
 let connection;
 
 const handleUserInput = (key) => {
   if (key === '\u0003') {
     process.exit();
   }
-  if (key === '\u0077') {
+  if (key === MOVE_UP_KEY) {
     connection.write('Move: up');
   }
-  if (key === '\u0061') {
+  if (key === MOVE_LEFT_KEY) {
     connection.write('Move: left');
   }
-  if (key === '\u0073') {
+  if (key === MOVE_DOWN_KEY) {
     connection.write('Move: down');
   }
-  if (key === '\u0064') {
+  if (key === MOVE_RIGHT_KEY) {
     connection.write('Move: right');
   }
-  if (key === '\u0068') {
-    connection.write("Say: Hello!");
-  }
-  if (key === '\u0072') {
-    connection.write("Say: How are you?");
-  }
-  if (key === '\u006C') {
-    connection.write("Say: I love this game!");
+  if (MESSAGES[key]) {
+    connection.write(MESSAGES[key]);
   }
 };
 
