@@ -16,6 +16,15 @@ const handleUserInput = (key) => {
   if (key === '\u0064') {
     connection.write('Move: right');
   }
+  if (key === '\u0068') {
+    connection.write("Say: Hello!");
+  }
+  if (key === '\u0072') {
+    connection.write("Say: How are you?");
+  }
+  if (key === '\u006C') {
+    connection.write("Say: I love this game!");
+  }
 };
 
 const setupInput = function(conn) {
