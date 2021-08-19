@@ -9,10 +9,10 @@ The original server side was created by Lighthouse Labs, however I have added ad
 
 ## Final Product
 
-!["Two users playing. One saying 'Hello!' to the other"](#)
+!["Two users playing. One saying 'Hello!' to the other"]
 ![image](https://user-images.githubusercontent.com/76081292/130108729-5cb3ac74-e13a-4465-8ac7-880064928a65.png)
 
-!["Two users playing, both saying 'Hey!'"](#)
+!["Two users playing, both saying 'Hey!'"]
 ![image](https://user-images.githubusercontent.com/76081292/130108981-1449a075-28b5-49f4-b63b-37ca95f38219.png)
 
 
