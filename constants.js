@@ -1,9 +1,10 @@
-const IP = '10.0.2.15';
+const IP = 'localhost';
 const PORT = 50541;
 const MOVE_UP_KEY = '\u0077';
 const MOVE_LEFT_KEY = '\u0061';
 const MOVE_DOWN_KEY = '\u0073';
 const MOVE_RIGHT_KEY = '\u0064';
+const EXIT_KEY = '\u0003';
 const NAME = 'Name: Jul';
 
 const MESSAGES = {
@@ -19,6 +20,7 @@ module.exports = {
   MOVE_LEFT_KEY,
   MOVE_DOWN_KEY,
   MOVE_RIGHT_KEY,
+  EXIT_KEY,
   NAME,
   MESSAGES
 };

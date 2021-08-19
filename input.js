@@ -1,8 +1,9 @@
-const { MOVE_UP_KEY, MOVE_LEFT_KEY, MOVE_DOWN_KEY, MOVE_RIGHT_KEY, MESSAGES } = require('./constants');
+const { MOVE_UP_KEY, MOVE_LEFT_KEY, MOVE_DOWN_KEY, MOVE_RIGHT_KEY, EXIT_KEY, MESSAGES } = require('./constants');
+
 let connection;
 
 const handleUserInput = (key) => {
-  if (key === '\u0003') {
+  if (key === EXIT_KEY) {
     process.exit();
   }
   if (key === MOVE_UP_KEY) {
@@ -22,6 +23,8 @@ const handleUserInput = (key) => {
   }
 };
 
+/*When this function is run in play.js with the parameter connect(), it passes the details of the current connection
+into the let connection variable above, allowing it to be used for the user input .write commands. */
 const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
