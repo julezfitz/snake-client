@@ -14,17 +14,6 @@ const connect = function() {
     conn.write(NAME);
   });
 
-  // Test to move snake up every 50ms
-  // conn.on('connect', () => {
-  //   let count = 0;
-  //   while (count < 20) {
-  //     setTimeout(() => {
-  //       conn.write('Move: up');
-  //     }, count * 500);
-  //     count += 1;
-  //   }
-  // });
-
   //Handles messages sent from the server.
   conn.on('data', (data) => {
     console.log('Message from game: ', data);
